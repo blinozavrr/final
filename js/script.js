@@ -228,4 +228,32 @@
   });
 
 })(jQuery);
+document.addEventListener("DOMContentLoaded", function () {
+  const themeToggle = document.getElementById("theme-toggle");
+  const currentTheme = localStorage.getItem("theme") || "light";
+
+  // Устанавливаем начальную тему
+  if (currentTheme === "dark") {
+    document.body.classList.add("dark-theme");
+    themeToggle.textContent = "Light Theme";
+  } else {
+    themeToggle.textContent = "Dark Theme";
+  }
+
+  // Переключение темы по нажатию
+  themeToggle.addEventListener("click", function () {
+    if (document.body.classList.contains("dark-theme")) {
+      document.body.classList.remove("dark-theme");
+      localStorage.setItem("theme", "light");
+      themeToggle.textContent = "Dark Theme";
+    } else {
+      document.body.classList.add("dark-theme");
+      localStorage.setItem("theme", "dark");
+      themeToggle.textContent = "Light Theme";
+    }
+  });
+});
+
+
+
 
