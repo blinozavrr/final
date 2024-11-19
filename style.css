@@ -2889,4 +2889,80 @@ section.categories .category-content a{
 --------------------------------------------------------------*/
 .jarallax.min-height300 {
     min-height: 300px;
+
 }
+/* Светлая тема (по умолчанию) */
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Тёмная тема */
+body.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Пример для навигации */
+body.dark-theme .secondary-nav {
+  background-color: #1e1e1e;
+  border-color: #333333;
+}
+
+body.dark-theme .user-items a {
+  color: #ffffff;
+}
+
+/* Кнопка переключения */
+#theme-toggle {
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #e0e0e0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-theme #theme-toggle {
+  background-color: #333333;
+  color: #ffffff;
+}
+/* Текстовые элементы */
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme h5,
+body.dark-theme h6,
+body.dark-theme p,
+body.dark-theme span,
+body.dark-theme li,
+body.dark-theme a {
+  color: #ffffff; /* Белый цвет текста */
+}
+
+/* Ссылки */
+body.dark-theme a {
+  color: #1e90ff; /* Светло-голубой для ссылок */
+  text-decoration: underline; /* Подчеркните ссылки для видимости */
+}
+
+/* Заголовки */
+body.dark-theme h1 {
+  font-weight: bold; /* Убедитесь, что текст виден */
+}
+
+/* Кнопки */
+body.dark-theme button,
+body.dark-theme .btn {
+  color: #ffffff;
+  background-color: #444444;
+  border: 1px solid #555555;
+}
+
+/* Подвал сайта */
+body.dark-theme .footer-menu a {
+  color: #cccccc; /* Светло-серый текст для ссылок */
+}
+
+
